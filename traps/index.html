@@ -1,0 +1,40 @@
+<!--Force Engine v2.0 by SuperQGS & qgsoftware.net-->
+
+<!DOCTYPE html>
+
+<!--HTML (this is a very useful comment)-->
+<html>
+    <!--CSS-->
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+        
+        #f2canvas {
+            width: 100%;
+        
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -o-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: pixelated;
+            background-color:lawngreen;
+        }
+    </style>
+    
+    <!--BODY-->
+    <body>
+        <!--GAME CANVAS-->
+        <canvas id='f2canvas'></canvas>
+    </body>
+    
+    <!--LINK SCRIPTS-->
+    <script src="scripts/collision.js"></script>
+    <script src="scripts/cycle.js"></script>
+    <script src="scripts/input.js"></script>
+    <script src="scripts/render.js"></script>
+    <script src="scripts/resources.js"></script>
+    
+    <script src="boot.js"></script>
+    
+</html>
