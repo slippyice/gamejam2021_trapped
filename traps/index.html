@@ -18,7 +18,18 @@
             image-rendering: -o-crisp-edges;
             image-rendering: -webkit-optimize-contrast;
             image-rendering: pixelated;
-            background-color:lawngreen;
+            background-color: lawngreen;
+        }
+        
+        img {
+            margin: 5px;
+            width: 64px;
+        }
+        
+        #selected {
+            width: 64px;
+            margin: 10px;
+            border: 10px solid black;
         }
     </style>
     
@@ -26,15 +37,25 @@
     <body>
         <!--GAME CANVAS-->
         <canvas id='f2canvas'></canvas>
+        
+        <!--Level Editor-->
+        <br>Layer:<select><option>background</option><option>interaction</option><option>foreground</option></select>
+        
+        <div id="editor">
+            <img id="selected">
+        </div>
+        
     </body>
     
     <!--LINK SCRIPTS-->
     <script src="scripts/collision.js"></script>
     <script src="scripts/cycle.js"></script>
     <script src="scripts/input.js"></script>
+    <script src="scripts/map.js"></script>
     <script src="scripts/render.js"></script>
     <script src="scripts/resources.js"></script>
     
     <script src="boot.js"></script>
+    <script src="traps.js"></script>
     
 </html>
