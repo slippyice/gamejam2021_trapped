@@ -1,10 +1,10 @@
 var RENDER = {
     
-    //main
-    frame: function(rendex) { //translate, rotate, scale, tint?, other filter?
-        for (i=0; i < rendex.length; i++) { //runs through rendering index
+    //render frame
+    frame: function(map, pointer) {
+        for (i = 0; i < pointer.length; i++) { //runs through rendering index
             
-            var obj = rendex[i];
+            var obj = map[pointer[i]];
             
             //simple or complex
             if (obj.length == 3) {
